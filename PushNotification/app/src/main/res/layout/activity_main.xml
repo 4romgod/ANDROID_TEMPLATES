@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Template"
+        android:textSize="35dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push Notification"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/tvHeader"
+        android:layout_alignRight="@+id/tvHeader"/>
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:hint="Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignRight="@+id/etName"/>
+
+    <EditText
+        android:id="@+id/etBody"
+        android:hint="Content body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSubject"
+        android:layout_alignLeft="@+id/etSubject"
+        android:layout_alignRight="@+id/etSubject"/>
+
+    <Button
+        android:id="@+id/btnNotify"
+        android:text="Notification"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBody"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/etBody"
+        android:layout_alignRight="@+id/etBody"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNotify"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/etBody"
+        android:layout_alignRight="@+id/etBody"/>
+
+</RelativeLayout>

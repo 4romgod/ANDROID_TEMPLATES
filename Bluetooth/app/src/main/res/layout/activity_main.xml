@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Templates"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="32dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnTurnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tvHeader"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTurnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tvHeader"
+        android:layout_toRightOf="@id/btnTurnOn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnVisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Visible"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tvHeader"
+        android:layout_toRightOf="@id/btnTurnOff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Devices"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tvHeader"
+        android:layout_toRightOf="@id/btnVisible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:layout_below="@id/btnTurnOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvDevices"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>
